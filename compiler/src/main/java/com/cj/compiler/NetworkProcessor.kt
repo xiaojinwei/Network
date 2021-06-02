@@ -37,7 +37,9 @@ class NetworkProcessor : AbstractProcessor() {
                 configClassNames.add(it.qualifiedName)
             }
         }
-        InitializerClass().build("com.cj.runtime",AptContext.filer,*configClassNames.toTypedArray())
+        if(configClassNames.size > 0){
+            InitializerClass().build("com.cj.runtime",AptContext.filer,*configClassNames.toTypedArray())
+        }
         return true
     }
 
