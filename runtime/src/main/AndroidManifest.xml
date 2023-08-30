@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application>
-        <provider
+        <!--<provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="${applicationId}.androidx-startup"
             android:exported="false"
@@ -15,7 +15,7 @@
             <meta-data
                 android:name="com.cj.runtime.NetConfigInitializer"
                 android:value="androidx.startup" />
-        </provider>
+        </provider>-->
     </application>
 
 </manifest>
